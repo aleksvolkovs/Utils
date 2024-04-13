@@ -4,7 +4,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class Utils {
+public class Utils {
 
     private final JavaPlugin plugin;
     Chat chat;
