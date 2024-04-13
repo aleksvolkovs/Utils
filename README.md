@@ -20,9 +20,10 @@ public void onEnable() {
 ### Chat
 ```java
 Player player = ...; //In this case you would have a player
-player.sendMessage(utils.getChat().format("&aThis is a chat message!"));
-utils.getChat().sendActionBar(player, utils.getChat().format("&aWow!"));
-utils.getChat().sendTitle(player, utils.getChat().format("&aThis is a title!"), utils.getChat().format("&aThis is a subtitle!"));
+player.sendMessage(Chat.format("&aThis is a chat message!"));
+player.sendMessage(Chat.format("&a" + ChatIcon.CHECKMARK));
+Chat.sendActionBar(player, Chat.format("&aWow!"));
+Chat.sendTitle(player, Chat.format("&aThis is a title!"), Chat.format("&aThis is a subtitle!"));
 ```
 
 ### Materials
