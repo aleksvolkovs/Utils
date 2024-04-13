@@ -1,0 +1,5 @@
+name: Utils
+version: '${project.version}'
+main: com.riftex.utils.Utils
+authors: [ Rscer ]
+description: utils for plugin development in 1.8.8 (by Aleks aka Rscer)
