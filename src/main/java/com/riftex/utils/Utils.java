@@ -15,15 +15,14 @@ public final class Utils {
         chat = new Chat();
     }
 
-    public void tickTimeAndWeather(String worldName, long timeTicks, boolean isRaining) {
+    public void tickTimeAndWeather(World world, long timeTicks, boolean isRaining) {
         taskId = Bukkit.getScheduler().scheduleSyncRepeatingTask(plugin, () -> {
-            World world = Bukkit.getWorld(worldName);
             if (world != null) {
                 world.setTime(timeTicks);
                 world.setStorm(isRaining);
                 world.setThundering(isRaining);
             } else {
-                plugin.getLogger().warning("World '" + worldName + "' not found!");
+                plugin.getLogger().warning("World '" + world.getName() + "' not found!");
             }
         }, 0L, 200L);
     }
