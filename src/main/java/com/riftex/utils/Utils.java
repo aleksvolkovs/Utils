@@ -7,12 +7,10 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class Utils {
 
     private final JavaPlugin plugin;
-    Chat chat;
     private int taskId = -1;
 
     public Utils(JavaPlugin plugin) {
         this.plugin = plugin;
-        chat = new Chat();
     }
 
     public void tickTimeAndWeather(World world, long timeTicks, boolean isRaining) {
@@ -31,10 +29,6 @@ public class Utils {
         if (cancel) {
             Bukkit.getScheduler().cancelTask(taskId);
         }
-    }
-
-    public Chat getChat() {
-        return chat;
     }
 
 }
