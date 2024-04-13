@@ -16,15 +16,12 @@ public final class Utils {
     }
 
     public void tickTimeAndWeather(String worldName, long timeTicks, boolean isRaining) {
-        taskId = Bukkit.getScheduler().scheduleSyncRepeatingTask(plugin, () -> {
-            setTimeAndWeather(worldName, timeTicks, isRaining);
-        }, 0L, 200L);
+        taskId = Bukkit.getScheduler().scheduleSyncRepeatingTask(plugin, () -> setTimeAndWeather(worldName, timeTicks, isRaining), 0L, 200L);
     }
 
     public void cancelTickTimeAndWeather(boolean cancel) {
         if (cancel) {
             Bukkit.getScheduler().cancelTask(taskId);
-            return;
         }
     }
 
@@ -38,6 +35,10 @@ public final class Utils {
         } else {
             System.out.println("World '" + worldName + "' not found!");
         }
+    }
+
+    public Chat getChat() {
+        return chat;
     }
 
 }
