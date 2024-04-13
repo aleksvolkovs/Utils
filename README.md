@@ -33,7 +33,9 @@ player.getInventory().addItem(ExtraMaterial.BLACK_WOOL.getItemStack());
 ### Weather
 ```java
 //params are: world, timeTicks, isRaining
-// isRaining if true then the world would be raining
+//world = get world.
+//timeTicks = set world time.
+//isRaining = if true then the world would be raining.
 utils.tickTimeAndWeather(player.getWorld(), 6000, true);
 utils.cancelTickTimeAndWeather(true);
 ```
