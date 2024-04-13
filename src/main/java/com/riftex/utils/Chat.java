@@ -10,12 +10,6 @@ import org.bukkit.entity.Player;
 
 public class Chat {
 
-    private final Utils utils;
-
-    public Chat(Utils utils) {
-        this.utils = utils;
-    }
-
     public String format(String message) {
         return ChatColor.translateAlternateColorCodes('&', message);
     }

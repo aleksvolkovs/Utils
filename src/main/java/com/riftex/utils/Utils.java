@@ -12,28 +12,25 @@ public final class Utils {
 
     public Utils(JavaPlugin plugin) {
         this.plugin = plugin;
-        chat = new Chat(this);
+        chat = new Chat();
     }
 
     public void tickTimeAndWeather(String worldName, long timeTicks, boolean isRaining) {
-        taskId = Bukkit.getScheduler().scheduleSyncRepeatingTask(plugin, () -> setTimeAndWeather(worldName, timeTicks, isRaining), 0L, 200L);
+        taskId = Bukkit.getScheduler().scheduleSyncRepeatingTask(plugin, () -> {
+            World world = Bukkit.getWorld(worldName);
+            if (world != null) {
+                world.setTime(timeTicks);
+                world.setStorm(isRaining);
+                world.setThundering(isRaining);
+            } else {
+                plugin.getLogger().warning("World '" + worldName + "' not found!");
+            }
+        }, 0L, 200L);
     }
 
     public void cancelTickTimeAndWeather(boolean cancel) {
         if (cancel) {
             Bukkit.getScheduler().cancelTask(taskId);
-        }
-    }
-
-    private void setTimeAndWeather(String worldName, long timeTicks, boolean isRaining) {
-        World world = Bukkit.getWorld(worldName);
-        if (world != null) {
-            world.setTime(timeTicks);
-
-            world.setStorm(isRaining);
-            world.setThundering(isRaining);
-        } else {
-            System.out.println("World '" + worldName + "' not found!");
         }
     }
 
