@@ -6,7 +6,7 @@ All you need to do is download the jar from releases and then add it to your pro
 
 # Using
 
-# Initilizing
+### Initilizing
 (i am using Lombok hence @Getter)
 ```java
 private @Getter Utils utils;
