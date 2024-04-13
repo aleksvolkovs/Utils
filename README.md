@@ -17,7 +17,7 @@ public void onEnable() {
 }
 ```
 
-# Chat
+### Chat
 ```java
 Player player = ...; //In this case you would have a player
 player.sendMessage(utils.getChat().format("&aThis is a chat message!"));
@@ -25,9 +25,17 @@ utils.getChat().sendActionBar(player, utils.getChat().format("&aWow!"));
 utils.getChat().sendTitle(player, utils.getChat().format("&aThis is a title!"), utils.getChat().format("&aThis is a subtitle!"));
 ```
 
-# Materials
+### Materials
 ```java
 player.getInventory().addItem(ExtraMaterial.BLACK_WOOL.getItemStack());
+```
+
+### Weather
+```java
+//params are: world, timeTicks, isRaining
+// isRaining if true then the world would be raining
+utils.tickTimeAndWeather(player.getWorld(), 6000, true);
+utils.cancelTickTimeAndWeather(true);
 ```
 
 this is it for now!
