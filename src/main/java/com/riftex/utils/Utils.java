@@ -22,7 +22,7 @@ public class Utils {
             } else {
                 plugin.getLogger().warning("World '" + world.getName() + "' not found!");
             }
-        }, 0L, 200L);
+        }, 0L, 1L);
     }
 
     public void cancelTickTimeAndWeather(boolean cancel) {
