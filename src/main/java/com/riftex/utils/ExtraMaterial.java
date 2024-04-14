@@ -41,6 +41,24 @@ public enum ExtraMaterial {
     RED_STAINED_GLASS(new ItemStack(Material.STAINED_GLASS, 1, DyeColor.RED.getData())),
     BLACK_STAINED_GLASS(new ItemStack(Material.STAINED_GLASS, 1, DyeColor.BLACK.getData())),
 
+    // STAINED GLASS PANE
+    WHITE_STAINED_GLASS_PANE(new ItemStack(Material.STAINED_GLASS_PANE, 1, DyeColor.WHITE.getData())),
+    ORANGE_STAINED_GLASS_PANE(new ItemStack(Material.STAINED_GLASS_PANE, 1, DyeColor.ORANGE.getData())),
+    MAGENTA_STAINED_GLASS_PANE(new ItemStack(Material.STAINED_GLASS_PANE, 1, DyeColor.MAGENTA.getData())),
+    LIGHT_BLUE_STAINED_GLASS_PANE(new ItemStack(Material.STAINED_GLASS_PANE, 1, DyeColor.LIGHT_BLUE.getData())),
+    YELLOW_STAINED_GLASS_PANE(new ItemStack(Material.STAINED_GLASS_PANE, 1, DyeColor.YELLOW.getData())),
+    LIME_STAINED_GLASS_PANE(new ItemStack(Material.STAINED_GLASS_PANE, 1, DyeColor.LIME.getData())),
+    PINK_STAINED_GLASS_PANE(new ItemStack(Material.STAINED_GLASS_PANE, 1, DyeColor.PINK.getData())),
+    GRAY_STAINED_GLASS_PANE(new ItemStack(Material.STAINED_GLASS_PANE, 1, DyeColor.GRAY.getData())),
+    LIGHT_GRAY_STAINED_GLASS_PANE(new ItemStack(Material.STAINED_GLASS_PANE, 1, DyeColor.SILVER.getData())),
+    CYAN_STAINED_GLASS_PANE(new ItemStack(Material.STAINED_GLASS_PANE, 1, DyeColor.CYAN.getData())),
+    PURPLE_STAINED_GLASS_PANE(new ItemStack(Material.STAINED_GLASS_PANE, 1, DyeColor.PURPLE.getData())),
+    BLUE_STAINED_GLASS_PANE(new ItemStack(Material.STAINED_GLASS_PANE, 1, DyeColor.BLUE.getData())),
+    BROWN_STAINED_GLASS_PANE(new ItemStack(Material.STAINED_GLASS_PANE, 1, DyeColor.BROWN.getData())),
+    GREEN_STAINED_GLASS_PANE(new ItemStack(Material.STAINED_GLASS_PANE, 1, DyeColor.GREEN.getData())),
+    RED_STAINED_GLASS_PANE(new ItemStack(Material.STAINED_GLASS_PANE, 1, DyeColor.RED.getData())),
+    BLACK_STAINED_GLASS_PANE(new ItemStack(Material.STAINED_GLASS_PANE, 1, DyeColor.BLACK.getData())),
+
     // Dye colors
     BLACK_DYE(new ItemStack(Material.INK_SACK, 1, DyeColor.BLACK.getDyeData())),
     GRAY_DYE(new ItemStack(Material.INK_SACK, 1, DyeColor.GRAY.getDyeData())),
